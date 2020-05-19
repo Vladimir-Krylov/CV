@@ -353,6 +353,13 @@ header {
     justify-content: center;
 }
 
+.experiences a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7CB6EB;
+}
+
 .experiences-wrapper {
     width: 1200px;
     padding: 45px 0 56px 0;    
@@ -476,13 +483,6 @@ header {
 
 .block-total-time li {
     margin-top: 7px;
-}
-
-.experiences a {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #7CB6EB;
 }
 
 
@@ -701,7 +701,7 @@ header {
     margin-bottom: 19px;
 }
 
-.languages p {
+.languages h6 {
     margin-bottom: 13px;
 }
 
