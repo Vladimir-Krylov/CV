@@ -159,9 +159,14 @@ header {
     width: 100%;
 }
 
-.language {
+.change-language {
     align-self: flex-end;
     margin: 20px 20px 14px 0;
+}
+
+.change-language span {
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .main-header {
@@ -170,28 +175,28 @@ header {
     min-width: 1200px;
 }
 
-.photo_main {
+.photo-main {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
 }
 
-.position {
+.main-info {
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin-left: 32px; 
 }
 
-.name_position {
+.name-autor {
     display: flex;
     flex-direction: row;   
     margin-bottom: 20px  
 }
 
-.name_position h1 {
+.name-autor h1 {
     border-bottom: 1px solid #FFFFFF;    
 }
 
-.name_divider {
+.name-divider {
     width: 52px;
     border-bottom: 2px solid #FFFFFF;    
 }
@@ -203,17 +208,17 @@ header {
     padding: 17px 35px 5px 35px;
 }
 
-.name_contact {
+.contact-header {
     display: flex;
     flex-direction: row;   
     margin-bottom: 23px  
 }
 
-.name_contact h3 {
+.contact-header h3 {
     border-bottom: 1px solid #FFFFFF;    
 }
 
-.contact_divider {
+.contact-divider {
     width: 21px;
     border-bottom: 2px solid #FFFFFF;    
 }
@@ -249,17 +254,17 @@ header {
     padding: 19px 0 38px 0;
 }
 
-.name_skills {
+.skills-header {
     display: flex;
     flex-direction: row;   
     margin: 0 50px 31px 50px;  
 }
 
-.name_skills h3 {
+.skills-header h3 {
     border-bottom: 1px solid #FFFFFF;    
 }
 
-.skills_divider {
+.skills-divider {
     width: 11px;
     border-bottom: 2px solid #FFFFFF;    
 }
@@ -277,21 +282,21 @@ header {
     flex-direction: row;
 }
 
-.name_skill_block {
+.skill-block-header {
     width: 150px;
 }
 
-.list_skills {
-    width: 331px;
+.list-skills {
+    width: 348px;
     margin-bottom: 30px;
     position: relative;
 }
 
-.list_skills p {
+.list-skills p {
     margin-top: 8px;
 }
 
-.first_skill p {
+.first-skill p {
     margin-top: 0;
 }
 
@@ -301,7 +306,7 @@ header {
     padding: 0; 
 }
 
-.item_skill {
+.item-skill {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -309,28 +314,28 @@ header {
     padding-left: 23px;
 }
 
-.item_skill p {
+.item-skill p {
     width: 260px; 
 }
 
-.item_skill div {
+.item-skill div {
     margin-top: 8px; 
     padding-top: 2px;
 }
 
-.first_skill div { 
+.first-skill div { 
     margin-top: 0;
 }
 
-.list_skills details .details-wrapper {
+.list-skills details .details-wrapper {
   overflow: hidden;
 }
 
-.list_skills details[open] .details-wrapper {
-  animation: spoiler_1 1s;
+.list-skills details[open] .details-wrapper {
+  animation: spoiler1 1s;
 }
 
-@keyframes spoiler_1 {
+@keyframes spoiler1 {
   0%   {max-height: 0;}
   100% {max-height: 15em;}
 }
@@ -348,39 +353,39 @@ header {
     justify-content: center;
 }
 
-.experiences_wrapper {
+.experiences-wrapper {
     width: 1200px;
     padding: 45px 0 56px 0;    
 }
 
-.name_experiences {
+.experiences-header {
     display: flex;
     flex-direction: row;   
     margin: 0 50px 48px 50px;  
 }
 
-.name_experiences h3 {
+.experiences-header h3 {
     border-bottom: 1px solid #FFFFFF;    
 }
 
-.experiences_divider {
+.experiences-divider {
     width: 18px;
     border-bottom: 2px solid #FFFFFF;    
 }
 
-.experiences_main {
+.experiences-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
 }
 
-.experiences_wrapper_main {
+.experiences-main-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.item_experience {
+.item-experience {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -388,7 +393,7 @@ header {
     padding: 0 0 20px 20px;
 }
 
-.item_experience::before {
+.item-experience::before {
   position: absolute;
   content: "";
   background: url("../icons/point.svg") no-repeat;
@@ -397,63 +402,63 @@ header {
   left: -6px;
 }
 
-.last_item {
+.last-item {
     border-left: 0;
     padding-bottom: 0;
 }
 
-.last_item::before {
+.last-item::before {
   left: -4px;
 }
 
-.item_experience p {
+.item-experience p {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.experience_years {
+.experience-years {
     min-width: 185px;
 }
 
-.description_experience {
+.description-experience {
     max-width: 490px;
     margin-left: 50px; 
     position: relative;
 }
 
-.description_topic {
+.description-topic {
     padding-top: 5px;
 }
 
-.description_topic li {
+.description-topic li {
     padding: 0 0 5px 10px;
 }
 
-.description_topic h5 {
+.description-topic h5 {
     padding: 15px 0;
 }
 
-.description_experience details .description_topic {
+.description-experience details .description-topic {
   overflow: hidden;
 }
 
-.description_experience details[open] .description_topic {
-  animation: spoiler 1s;
+.description-experience details[open] .description-topic {
+  animation: spoiler2 1s;
 }
 
-@keyframes spoiler {
+@keyframes spoiler2 {
   0%   {max-height: 0;}
   100% {max-height: 85em;}
 }
 
-.description_experience summary::before {
+.description-experience summary::before {
   margin: 8px 0 0 0;
 }
 
-.description_experience details summary {
+.description-experience details summary {
   margin-left: -6px;
 }
 
-.topic_experience h4 {
+.topic-experience h4 {
     margin-bottom: 12px;
 }
 
@@ -473,6 +478,13 @@ header {
     margin-top: 7px;
 }
 
+.experiences a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7CB6EB;
+}
+
 
 /* ABOUT 
 ===============================================
@@ -484,39 +496,39 @@ header {
     justify-content: center;
 }
 
-.about_wrapper {
+.about-wrapper {
     width: 1200px;
     padding: 45px 0 56px 0;    
 }
 
-.name_about {
+.about-header {
     display: flex;
     flex-direction: row;   
     margin: 0 50px 22px 50px;  
 }
 
-.name_about h3 {
+.about-header h3 {
     border-bottom: 1px solid #FFFFFF;    
 }
 
-.about_divider {
+.about-divider {
     width: 12px;
     border-bottom: 2px solid #FFFFFF;    
 }
 
-.about_main {
+.about-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 50px;
 }
 
-.description_about {
+.description-about {
     max-width: 560px;
     padding-left: 15px;
 }
 
-.description_about li {
+.description-about li {
     list-style-type: disc;
     list-style-position: outside;
     color: #FFFFFF;
@@ -528,22 +540,22 @@ header {
     flex-direction: row;
 }
 
-.name_soft_skill_block {
+.soft-skill-block-header {
     width: 100px;
 }
 
-.list_soft_skills {
+.list-soft-skills {
     width: 331px;
     margin-bottom: 30px;
     position: relative;
 }
 
-.list_soft_skills ul {
+.list-soft-skills ul {
     border-left: 1px solid #FFFFFF;
     padding-left: 23px;
 }
 
-.list_soft_skills p {
+.list-soft-skills p {
     margin-bottom: 8px;
 }
 
@@ -553,29 +565,33 @@ header {
     position: relative;
 }
 
-.block_lectures {
+.lecture-header h4 {
+    margin-bottom: 12px;
+}
+
+.block-lectures {
     padding-top: 5px;
 }
 
-.block_lectures li {
+.block-lectures li {
     padding: 0 0 10px 0;
     color: #7CB6EB;
 }
 
-.block_lectures a {
+.block-lectures a {
     padding-left: 7px;
     color: #7CB6EB;
 }
 
-.lecture details .block_lectures {
+.lecture details .block-lectures {
   overflow: hidden;
 }
 
-.lecture details[open] .block_lectures {
-  animation: spoiler2 1s;
+.lecture details[open] .block-lectures {
+  animation: spoiler3 1s;
 }
 
-@keyframes spoiler2 {
+@keyframes spoiler3 {
   0%   {max-height: 0;}
   100% {max-height: 6em;}
 }
@@ -586,10 +602,6 @@ header {
 
 .lecture details summary {
   margin-left: -6px;
-}
-
-.name_lecture h4 {
-    margin-bottom: 12px;
 }
 
 
@@ -606,27 +618,27 @@ header {
     width: 100%;
 }
 
-.additional_wrapper {
+.additional-wrapper {
     width: 1200px;
     padding: 45px 0 56px 0;    
 }
 
-.name_additional {
+.additional-header {
     display: flex;
     flex-direction: row;   
     margin: 0 50px 34px 50px;  
 }
 
-.name_additional h3 {
+.additional-header h3 {
     border-bottom: 1px solid #FFFFFF;    
 }
 
-.additional_divider {
+.additional-divider {
     width: 22px;
     border-bottom: 2px solid #FFFFFF;    
 }
 
-.additional_main {
+.additional-main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -642,7 +654,7 @@ header {
     margin-bottom: 24px;
 }
 
-.item_education {
+.item-education {
     display: flex;
     flex-direction: column;  
     position: relative;
@@ -650,7 +662,7 @@ header {
     padding: 0 0 20px 20px;
 }
 
-.item_education::before {
+.item-education::before {
   position: absolute;
   content: "";
   background: url("../icons/point.svg") no-repeat;
@@ -659,23 +671,23 @@ header {
   left: -6px;
 }
 
-.last_item {
+.last-item {
     border-left: 0;
     padding-bottom: 0;
 }
 
-.last_item::before {
+.last-item::before {
   left: -4px;
 }
 
-.item_education a {
+.item-education a {
     color: #7CB6EB;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 11px;
 }
 
-.item_education span {
+.item-education span {
     color: rgba(255, 255, 255, 0.7);
     margin-top: 7px;
 }
@@ -693,24 +705,23 @@ header {
     margin-bottom: 13px;
 }
 
-
 .courses {
     position: relative;
 }
 
-.topic_courses {
+.courses-header {
     margin-bottom: 20px;
 }
 
-.courses details .description_course {
+.courses details .description-course {
   overflow: hidden;
 }
 
-.courses details[open] .description_course {
-  animation: spoiler3 1s;
+.courses details[open] .description-course {
+  animation: spoiler4 1s;
 }
 
-@keyframes spoiler3 {
+@keyframes spoiler4 {
   0%   {max-height: 0;}
   100% {max-height: 25em;}
 }
@@ -724,16 +735,16 @@ header {
 }
 
 
-.description_course span {
+.description-course span {
     color: rgba(255, 255, 255, 0.7);
     padding: 3px 0;  
 }
 
-.description_course a {
+.description-course a {
     color: #7CB6EB;
 }
 
-.description_course div {
+.description-course div {
     display: flex;
     flex-direction: column;
     padding-bottom: 16px; 
@@ -789,4 +800,5 @@ footer a, footer p {
 .copyright {
     align-self: flex-end;
     margin: 0 20px 20px 0;
+    font-size: 12px;
 }
