@@ -59,24 +59,14 @@ p, h5, span {
     margin: 0;
 }
 
-h6 {
+h6, a {
     font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 16px;
     color: #FFFFFF;
     margin: 0;
-}
-
-a {
-    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration-line: underline;
-    color: #FFFFFF;
 }
 
 
@@ -171,7 +161,7 @@ header {
 
 .language {
     align-self: flex-end;
-    margin: 20px 20px 0 0;
+    margin: 20px 20px 14px 0;
 }
 
 .main-header {
@@ -193,19 +183,17 @@ header {
 
 .name_position {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
+    margin-bottom: 20px  
 }
 
-.zasechka_position {
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0;
-    width: 44.7px;
+.name_position h1 {
+    border-bottom: 1px solid #FFFFFF;    
 }
 
 .name_divider {
-    border: 0.4px solid #FFFFFF;
-    margin: 0 0 22px 0; 
-    width: 490px;
+    width: 52px;
+    border-bottom: 2px solid #FFFFFF;    
 }
 
 .contact-info {
@@ -217,19 +205,17 @@ header {
 
 .name_contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
+    margin-bottom: 23px  
 }
 
-.zasechka_contact {
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0 0 0 10px;
-    width: 21.4px;
+.name_contact h3 {
+    border-bottom: 1px solid #FFFFFF;    
 }
 
 .contact_divider {
-    border: 0.4px solid #FFFFFF;
-    margin: 0 0 23px 0; 
-    width: 160px;
+    width: 21px;
+    border-bottom: 2px solid #FFFFFF;    
 }
 
 .contact-info li {
@@ -265,26 +251,22 @@ header {
 
 .name_skills {
     display: flex;
-    flex-direction: row;
-    padding: 0 50px;
+    flex-direction: row;   
+    margin: 0 50px 31px 50px;  
 }
 
-.zasechka_skills {
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0 0 0 3px;
-    width: 11px;
+.name_skills h3 {
+    border-bottom: 1px solid #FFFFFF;    
 }
 
 .skills_divider {
-    border: 0.4px solid #FFFFFF;
-    margin: 0 50px 22px 50px; 
-    width: 115px;
+    width: 11px;
+    border-bottom: 2px solid #FFFFFF;    
 }
 
 .main-skill {
     display: flex;
     flex-direction: row;
-    margin-top: 36px; 
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 50px;
@@ -373,20 +355,17 @@ header {
 
 .name_experiences {
     display: flex;
-    flex-direction: row;
-    padding: 0 50px;
+    flex-direction: row;   
+    margin: 0 50px 48px 50px;  
 }
 
-.zasechka_experiences {
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0 0 0 3px;
-    width: 20px;
+.name_experiences h3 {
+    border-bottom: 1px solid #FFFFFF;    
 }
 
 .experiences_divider {
-    border: 0.4px solid #FFFFFF;
-    margin: 0 50px 48px 50px; 
-    width: 201px;
+    width: 18px;
+    border-bottom: 2px solid #FFFFFF;    
 }
 
 .experiences_main {
@@ -512,20 +491,17 @@ header {
 
 .name_about {
     display: flex;
-    flex-direction: row;
-    padding: 0 50px;
+    flex-direction: row;   
+    margin: 0 50px 22px 50px;  
 }
 
-.zasechka_about {
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0 0 0 3px;
-    width: 20px;
+.name_about h3 {
+    border-bottom: 1px solid #FFFFFF;    
 }
 
 .about_divider {
-    border: 0.4px solid #FFFFFF;
-    margin: 0 50px 22px 50px; 
-    width: 135.07px;
+    width: 12px;
+    border-bottom: 2px solid #FFFFFF;    
 }
 
 .about_main {
@@ -637,20 +613,17 @@ header {
 
 .name_additional {
     display: flex;
-    flex-direction: row;
-    padding: 0 50px;
+    flex-direction: row;   
+    margin: 0 50px 34px 50px;  
 }
 
-.zasechka_additional {
-    border-bottom: 1px solid #FFFFFF;
-    margin: 0 0 0 3px;
-    width: 20px;
+.name_additional h3 {
+    border-bottom: 1px solid #FFFFFF;    
 }
 
 .additional_divider {
-    border: 0.4px solid #FFFFFF;
-    margin: 0 50px 48px 50px; 
-    width: 241.2px;
+    width: 22px;
+    border-bottom: 2px solid #FFFFFF;    
 }
 
 .additional_main {
@@ -782,6 +755,10 @@ footer {
     width: 100%;
 }
 
+footer a, footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .footer-menu {
     display: flex;
     flex-direction: row;
@@ -812,5 +789,4 @@ footer {
 .copyright {
     align-self: flex-end;
     margin: 0 20px 20px 0;
-    color: rgba(255, 255, 255, 0.7);
 }
