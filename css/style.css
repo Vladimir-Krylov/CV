@@ -69,6 +69,10 @@ h6, a {
     margin: 0;
 }
 
+a {
+    color: #7CB6EB;
+}
+
 
 /* COMMON 
 ===============================================
@@ -167,6 +171,10 @@ header {
 .change-language span {
     font-size: 14px;
     line-height: 16px;
+}
+
+.change-language a {
+    color: #FFFFFF;
 }
 
 .main-header {
@@ -357,7 +365,6 @@ header {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    color: #7CB6EB;
 }
 
 .experiences-wrapper {
@@ -575,12 +582,10 @@ header {
 
 .block-lectures li {
     padding: 0 0 10px 0;
-    color: #7CB6EB;
 }
 
 .block-lectures a {
     padding-left: 7px;
-    color: #7CB6EB;
 }
 
 .lecture details .block-lectures {
@@ -681,7 +686,6 @@ header {
 }
 
 .item-education a {
-    color: #7CB6EB;
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 11px;
@@ -738,10 +742,6 @@ header {
 .description-course span {
     color: rgba(255, 255, 255, 0.7);
     padding: 3px 0;  
-}
-
-.description-course a {
-    color: #7CB6EB;
 }
 
 .description-course div {
