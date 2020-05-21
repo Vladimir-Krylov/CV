@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 /* FONTS 
 ===============================================
@@ -8,7 +7,7 @@
 
 h1 {
     margin: 0;
-    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 44px;
@@ -19,7 +18,7 @@ h1 {
 
 h2 {
     margin: 0;
-    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
@@ -29,7 +28,7 @@ h2 {
 
 h3 {
     margin: 0;
-    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -39,7 +38,7 @@ h3 {
 
 h4, summary {
     margin: 0;
-    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -48,7 +47,7 @@ h4, summary {
 }
 
 p, h5, span {
-    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -58,7 +57,7 @@ p, h5, span {
 }
 
 h6, a {
-    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -181,11 +180,12 @@ header {
 .main-header {
     display: flex;
     flex-direction: row;
-    min-width: 1200px;
+    width: 1200px;
 }
 
 .photo-main {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    margin-left: 10px;
 }
 
 .main-info {
@@ -215,7 +215,7 @@ header {
 }
 
 .contact-info {
-    margin: 0 0 0 auto;
+    margin: 0 10px 0 auto;
     background: #3B3E42;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
     padding: 17px 35px 5px 35px;
@@ -825,7 +825,7 @@ footer a, footer p {
 */
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 720px) and (max-width: 1200px) {
     h1 {
         font-size: 28px;
         line-height: 33px;
@@ -841,7 +841,7 @@ footer a, footer p {
     }
 
     .main-header {
-        min-width: auto;
+        width: 720px;
     }
 
     .photo-main {
@@ -929,7 +929,7 @@ footer a, footer p {
     }
 
     .description-about {
-        max-width: auto;
+        max-width: none;
     }
 
     .list-soft-skills {
@@ -941,3 +941,21 @@ footer a, footer p {
         width: 720px;
     }
 }
+/*
+@media screen and (min-width: 360px) and (max-width: 720px) { 
+    .main-header {
+        width: 720px;
+    }
+
+    .additional-wrapper {
+        width: 360px;
+    }
+
+    .about-wrapper {
+        width: 720px;
+    }
+
+    .additional-wrapper {
+        width: 720px;
+    }
+}*/
