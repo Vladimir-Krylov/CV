@@ -494,6 +494,7 @@ header {
     background-color: #4C4E52;    
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
     padding: 15px 21px 13px 26px;
+    margin-left: 40px;
     width: 255px;
     height: 145px;
 }
@@ -542,8 +543,7 @@ header {
 }
 
 .description-about {
-    max-width: 560px;
-    padding-left: 15px;
+    margin: 0 15px;
 }
 
 .description-about li {
@@ -556,6 +556,7 @@ header {
 .soft-skill-block {
     display: flex;
     flex-direction: row;
+    margin-left: 15px;
 }
 
 .soft-skill-block-header {
@@ -901,6 +902,10 @@ footer a, footer p {
         padding-bottom: 3px;
     }
 
+    
+    .experiences-wrapper {
+        width: 720px;   
+    }
 
     .experiences-main {
         flex-direction: column-reverse;
@@ -915,12 +920,16 @@ footer a, footer p {
     }
 
     .block-total-time {
-        margin-bottom: 68px;
+        margin: 0 0 68px 0;
     }
 
+    
+    .about-wrapper {
+        width: 720px;
+    }
 
     .description-about {
-        max-width: 360px;
+        max-width: auto;
     }
 
     .list-soft-skills {
@@ -928,7 +937,7 @@ footer a, footer p {
     }
 
 
-    .education {
-        max-width: 700px;
+    .additional-wrapper {
+        width: 720px;
     }
 }
