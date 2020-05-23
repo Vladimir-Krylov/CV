@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>CV Vladimir Krylov</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.png">
 </head>
 <body>
 	<header>
@@ -15,30 +16,31 @@
 				<div class="name-autor"><h1>Владимир&nbsp;Крылов</h1><div class="name-divider"></div></div>
 				<h2>QA Engineer</h2>
 				<h2>Удаленная работа</h2>
-				<h2>$ 2500</h2>
+				<h2 class="salary">$ 2500</h2>
 			</div>
 
 			<ul class="contact-info">
-				<div class="contact-header"><h3>Контакты</h3><div class="contact-divider"></div></div>
-				<li>
-					<img src="icons/location.svg" alt="Location" width="28" height="28">
+				<li class="contact-header"><h3>Контакты</h3><div class="contact-divider"></div></li>
+				<li class="contact-location">
+					<img src="icons/location.svg" alt="Location" width="25" height="25">
 					<p>Москва, Россия</p>
 				</li>
 				<li>
-					<img src="icons/e-mail.svg" alt="E-mail" width="28" height="28">
-					<p>vova@krylov.ws</p>
+					<img src="icons/e-mail.svg" alt="E-mail" width="25" height="25">
+					<a href="mailto:vova@krylov.ws">vova@krylov.ws</a>
+				</li>
+				<li class="contact-skype">
+					<img src="icons/skype.svg" alt="Skype" width="25" height="25">
+					<a href="skype:palomnik.optimizma">palomnik.optimizma</a>
 				</li>
 				<li>
-					<img src="icons/telegram.svg" alt="Telegram" width="28" height="28">
-					<p>@Palomnik</p>
+					<img src="icons/telegram.svg" alt="Telegram" width="25" height="25">
+					<a href="https://t.me/Palomnik">Palomnik</a>
 				</li>
-				<li>
-					<img src="icons/skype.svg" alt="Skype" width="28" height="28">
-					<p>palomnik.optimizma</p>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/vladimir.krylov.tango" target="_blank"><img src="icons/facebook.svg" alt="Facebook" width="28" height="28"></a>
-					<a href="https://www.linkedin.com/in/vladimir-krylov-862ab15b" target="_blank"><img src="icons/linkedin.svg" alt="Linkedin" width="28" height="28"></a>
+				<li class="contact-link">
+					<a href="https://www.facebook.com/vladimir.krylov.tango" target="_blank"><img src="icons/facebook.svg" alt="Facebook" width="22" height="22"></a>
+					<a href="https://www.linkedin.com/in/vladimir-krylov-862ab15b" target="_blank"><img src="icons/linkedin.svg" alt="Linkedin" width="22" height="22"></a>
+					<a href="https://github.com/Vladimir-Krylov" target="_blank"><img src="icons/github.svg" alt="Linkedin" width="23" height="23"></a>
 				</li>
 			</ul>
 		</div>
@@ -88,7 +90,7 @@
 									<p>Производительность</p>
 									<div>
 										<img src="icons/skill_on.svg" alt="Skill on" width="13" height="13">
-										<img src="icons/skill_on.svg" alt="Skill off" width="13" height="13">
+										<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
 										<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
 										<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
 									</div>
@@ -285,20 +287,20 @@
 								<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
 							</div>
 						</div>
+						<div class="item-skill">
+							<p>Firebase</p>
+							<div>
+								<img src="icons/skill_on.svg" alt="Skill on" width="13" height="13">
+								<img src="icons/skill_on.svg" alt="Skill on" width="13" height="13">
+								<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
+								<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
+							</div>
+						</div>
 						<details>
 							<summary></summary>
 							<div class="details-wrapper">
 								<div class="item-skill">
 									<p>Figma / Sketch</p>
-									<div>
-										<img src="icons/skill_on.svg" alt="Skill on" width="13" height="13">
-										<img src="icons/skill_on.svg" alt="Skill on" width="13" height="13">
-										<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
-										<img src="icons/skill_off.svg" alt="Skill off" width="13" height="13">
-									</div>
-								</div>
-								<div class="item-skill">
-									<p>Firebase</p>
 									<div>
 										<img src="icons/skill_on.svg" alt="Skill on" width="13" height="13">
 										<img src="icons/skill_on.svg" alt="Skill on" width="13" height="13">
@@ -577,7 +579,7 @@
 				        				</ul>
 
 				        				<h5>Занимался ручным тестированием приложений (ios и android) и тестированием mobile web, а также бэкенд сервисов:</h5>
-				        				<naulv>
+				        				<ul>
 				        					<li><p>Полный цикл тестирования: проверка идеи на реализуемость и адекватность, анализ требований, тестирование прототипа, проверка реализации, отслеживание результатов АБ-тестирования;</p></li>
 				        					<li><p>Создал с нуля и поддерживал E2E-тесткейсы для автоматизации в TestRail'е;</p></li>
 				        					<li><p>Создал с нуля и поддерживал набор чеклистов для ручного тестирования;</p></li>
@@ -699,7 +701,7 @@
 						</div>
 					</div>
 					<div class="block-total-time">
-						<ul>
+						<ul class="name-time">
 							<li><p>Всего:</p></li>
 							<li><p>QA specialist:</p></li>
 							<li><p>Mobile QA:</p></li>
@@ -831,8 +833,6 @@
 							</div>
 						</details>
 					</div>
-					
-
 				</div>
 			</div>
 		</section>
@@ -841,10 +841,12 @@
 
 	<footer>
 		<nav class="footer-menu">
-			<li><a href="#skills">Навыки</a></li>
-			<li><a href="#experiences">Опыт работы</a></li>
-			<li><a href="#about">Обо мне</a></li>
-			<li><a href="#additional">Дополнительно</a></li>
+			<ul>
+				<li><a href="#skills">Навыки</a></li>
+				<li><a href="#experiences">Опыт работы</a></li>
+				<li><a href="#about">Обо мне</a></li>
+				<li><a href="#additional">Дополнительно</a></li>
+			</ul>
 		</nav>
 		<div class="footer-contacts">
 			<div>
@@ -857,8 +859,8 @@
 			</div>
 		</div>
 		<div class="footer-social">
-			<a href="https://www.facebook.com/vladimir.krylov.tango" target="_blank"><img src="icons/facebook_footer.svg" alt="Facebook" width="28" height="28"></a>
-			<a href="https://www.linkedin.com/in/vladimir-krylov-862ab15b" target="_blank"><img src="icons/linkedin_footer.svg" alt="Linkedin" width="28" height="28"></a>
+			<a href="https://www.facebook.com/vladimir.krylov.tango" target="_blank"><img src="icons/facebook_footer.svg" alt="Facebook" width="18" height="18"></a>
+			<a href="https://www.linkedin.com/in/vladimir-krylov-862ab15b" target="_blank"><img src="icons/linkedin_footer.svg" alt="Linkedin" width="18" height="18"></a>
 		</div>
 		<p class="copyright">Дизайн &copy; A. Sharogradskaia, 2020</p>
 	</footer>
