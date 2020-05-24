@@ -892,6 +892,10 @@ footer p {
       padding: 0;
   }
 
+  .contact-info p {
+    padding: 0;
+  }
+
   .contact-header h3 {
     padding-bottom: 5px;
     font-size: 20px;
@@ -1027,6 +1031,10 @@ footer p {
     width: 19px;
     height: 19px;
     margin-right: 5px;
+  }
+
+  .contact-info p {
+    padding: 0;
   }
   
   .contact-header {
