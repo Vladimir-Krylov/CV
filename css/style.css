@@ -437,12 +437,13 @@ header {
   left: -4px;
 }
 
-.experience-years p {
-  color: rgba(255, 255, 255, 0.7);
+.experience-years {
+  min-width: 201px;
 }
 
-.experience-years {
-  min-width: 196px;
+.experience-years p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 4px;
 }
 
 .description-experience {
@@ -556,6 +557,7 @@ header {
 
 .description-about {
   margin: 0 15px;
+  width: 565px;
 }
 
 .description-about li {
@@ -576,7 +578,7 @@ header {
 }
 
 .list-soft-skills {
-  width: 331px;
+  width: 230px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -733,7 +735,6 @@ header {
 
 .languages h6 {
   margin-bottom: 13px;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .courses {
@@ -941,7 +942,11 @@ footer p {
   }
 
   .list-soft-skills {
-    width: 185px;
+    width: 175px;
+  }
+
+  .list-soft-skills ul {
+    padding-left: 15px;
   }
 
   .additional-wrapper {
@@ -958,6 +963,10 @@ footer p {
   h2, h3 {
     font-size: 18px;
     line-height: 21px;
+  }
+
+  a {
+    font-size: 16px;
   }
 
   h4 {
@@ -1040,11 +1049,11 @@ footer p {
   }
 
   .contact-location {
-    margin-right: 42px;
+    margin-right: 56px;
   }
 
   .contact-skype {
-    margin-right: 18px;
+    margin-right: 35px;
   }
 
   .contact-link {
@@ -1111,8 +1120,12 @@ footer p {
     display: flex;
   }
 
+  .experiences a {
+    font-size: 16px;
+  }
+  
   .experience-years p {
-    margin-left: 10px;
+    margin: 0 0 0 10px;
   }
 
   .description-experience {
@@ -1146,12 +1159,16 @@ footer p {
     width: auto;
   }
 
+  .description-about {
+      width: auto;
+  }
+
   .description-about li {
     padding: 0 0 20px 5px;
   }
 
   .lecture {
-    margin-left: 10px;
+    margin-left: 26px;
   }
 
   .additional-wrapper {
@@ -1177,6 +1194,14 @@ footer p {
 
   .item-education {
     margin-left: 5px;
+  }
+
+  .item-education a {
+    font-size: 16px;
+  }
+
+  .footer-menu a {
+    font-size: 14px;
   }
 
   .footer-menu li {
