@@ -737,12 +737,9 @@ header {
   position: relative;
 }
 
-.courses-header {
-  margin-bottom: 20px;
-}
-
 .courses details .description-course {
   overflow: hidden;
+  padding: 0;
 }
 
 .courses details[open] .description-course {
@@ -762,12 +759,12 @@ header {
   margin-left: -6px;
 }
 
-.description-course span {
+.courses span {
   color: rgba(255, 255, 255, 0.7);
   padding: 3px 0;
 }
 
-.description-course div {
+.courses div {
   display: flex;
   flex-direction: column;
   padding-bottom: 16px;
