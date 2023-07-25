@@ -89,6 +89,7 @@ body {
 }
 
 main {
+  background-color: #3b3e42;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,6 +272,52 @@ header {
 }
 
 
+/* ABOUT
+===============================================
+*/
+
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  width: 1200px;
+  padding: 45px 0 15px 0;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 22px 50px;
+}
+
+.about-header h3 {
+  border-bottom: 1px solid #fff;
+}
+
+.about-divider {
+  width: 12px;
+  border-bottom: 2px solid #fff;
+}
+
+.about-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.description-about {
+  margin: 0 15px;
+}
+
+.description-about li {
+  padding: 0 0 30px 0;
+}
+
+
 /* SKILL
 ===============================================
 */
@@ -369,7 +416,7 @@ header {
 */
 
 .experiences {
-  background: #3b3e42;
+  background-color: #4c4e52;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -449,8 +496,8 @@ header {
 }
 
 .description-experience {
-  max-width: 490px;
-  margin-left: 50px;
+  max-width: 500px;
+  margin-left: 30px;
   position: relative;
 }
 
@@ -458,16 +505,21 @@ header {
   padding-top: 5px;
 }
 
-.description-topic li {
-  padding: 0 0 5px 10px;
-}
-
 .description-topic h5 {
-  padding: 15px 0;
+  padding: 25px 0 0 0;
+  font-weight: 500;
 }
 
 .description-topic p {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.description-topic li {
+  list-style-type: disc;
+  list-style-position: outside;
+  color: #fff;
+  padding: 10px 0 0 10px;
+  margin-left: 13px;
 }
 
 .description-experience details .description-topic {
@@ -499,11 +551,10 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  background-color: #4c4e52;
+  background-color: #3b3e42;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
   padding: 15px 21px 13px 26px;
-  margin-left: 40px;
-  width: 200px;
+  width: 245px;
   height: 180px;
 }
 
@@ -513,128 +564,11 @@ header {
 
 .name-time p {
   font-weight: normal;
+  margin-left: 20px;
 }
 
 .block-total-time li {
   margin-top: 7px;
-}
-
-
-/* ABOUT
-===============================================
-*/
-
-.about {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.about-wrapper {
-  width: 1200px;
-  padding: 45px 0 56px 0;
-}
-
-.about-header {
-  display: flex;
-  flex-direction: row;
-  margin: 0 50px 22px 50px;
-}
-
-.about-header h3 {
-  border-bottom: 1px solid #fff;
-}
-
-.about-divider {
-  width: 12px;
-  border-bottom: 2px solid #fff;
-}
-
-.about-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 50px;
-}
-
-.description-about {
-  margin: 0 15px;
-  width: 565px;
-}
-
-.description-about li {
-  list-style-type: disc;
-  list-style-position: outside;
-  color: #fff;
-  padding: 0 0 30px 15px;
-}
-
-.soft-skill-block {
-  display: flex;
-  flex-direction: row;
-  margin-left: 15px;
-}
-
-.soft-skill-block-header {
-  width: 100px;
-}
-
-.list-soft-skills {
-  width: 230px;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.list-soft-skills ul {
-  border-left: 1px solid #fff;
-  padding-left: 23px;
-}
-
-.list-soft-skills p {
-  margin-bottom: 8px;
-}
-
-.lecture {
-  max-width: 490px;
-  margin-left: 50px;
-  position: relative;
-}
-
-.lecture-header h4 {
-  margin-bottom: 12px;
-}
-
-.block-lectures {
-  padding-top: 5px;
-}
-
-.block-lectures li {
-  padding: 0 0 10px 0;
-}
-
-.block-lectures span {
-  padding-left: 7px;
-}
-
-.lecture details .block-lectures {
-  overflow: hidden;
-}
-
-.lecture details[open] .block-lectures {
-  animation: spoiler3 1s;
-}
-
-@keyframes spoiler3 {
-  0% { max-height: 0; }
-  100% { max-height: 6em; }
-}
-
-.lecture summary::before {
-  margin: 8px 0 0 0;
-}
-
-.lecture details summary {
-  margin-left: -6px;
 }
 
 
@@ -646,8 +580,20 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  background: #3b3e42;
   width: 100%;
+}
+
+.additional span {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 7px 0 0 25px;
+}
+
+.additional h4 {
+  margin-bottom: 20px;
+}
+
+.additional summary::before {
+  margin: 0;
 }
 
 .additional-wrapper {
@@ -683,52 +629,19 @@ header {
 }
 
 .education h4 {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .item-education {
   display: flex;
   flex-direction: column;
   position: relative;
-  border-left: 2px solid #fff;
-  padding: 0 0 20px 20px;
-}
-
-.item-education::before {
-  position: absolute;
-  content: "";
-  background: url("../icons/point.svg") no-repeat;
-  height: 10px;
-  width: 10px;
-  left: -6px;
+  padding: 0 0 20px 0;
 }
 
 .last-item {
   border-left: 0;
   padding-bottom: 0;
-}
-
-.last-item::before {
-  left: -4px;
-}
-
-.item-education a {
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 11px;
-}
-
-.item-education p {
-  margin-top: 11px;
-}
-
-.item-education span {
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 7px;
-}
-
-.languages {
-  margin: 40px 0;
 }
 
 .languages h4 {
@@ -740,6 +653,7 @@ header {
 }
 
 .courses {
+  margin: 40px 0;
   position: relative;
 }
 
@@ -757,17 +671,8 @@ header {
   100% { max-height: 28em; }
 }
 
-.courses summary::before {
-  margin: 8px 0 0 0;
-}
-
 .courses details summary {
   margin-left: -6px;
-}
-
-.courses span {
-  color: rgba(255, 255, 255, 0.7);
-  padding: 3px 0;
 }
 
 .courses div {
@@ -776,6 +681,36 @@ header {
   padding-bottom: 16px;
 }
 
+.lecture {
+  margin-top: 40px;
+  position: relative;
+}
+
+
+.lecture span {
+  margin: 0 0 0 5px;
+}
+
+.block-lectures li {
+  padding: 0 0 10px 0;
+}
+
+.lecture details .block-lectures {
+  overflow: hidden;
+}
+
+.lecture details[open] .block-lectures {
+  animation: spoiler3 1s;
+}
+
+@keyframes spoiler3 {
+  0% { max-height: 0; }
+  100% { max-height: 6em; }
+}
+
+.lecture details summary {
+  margin-left: -6px;
+}
 
 /* FOOTER
 ===============================================
@@ -949,14 +884,6 @@ footer p {
 
   .description-about {
     max-width: none;
-  }
-
-  .list-soft-skills {
-    width: 175px;
-  }
-
-  .list-soft-skills ul {
-    padding-left: 15px;
   }
 
   .additional-wrapper {
@@ -1176,20 +1103,12 @@ footer p {
     flex-direction: column;
   }
 
-  .list-soft-skills {
-    width: auto;
-  }
-
   .description-about {
       width: auto;
   }
 
   .description-about li {
-    padding: 0 0 20px 5px;
-  }
-
-  .lecture {
-    margin-left: 26px;
+    padding: 0 0 20px 0;
   }
 
   .additional-wrapper {
@@ -1209,16 +1128,12 @@ footer p {
     padding: 0 10px;
   }
 
-  .education h4 {
-    margin-bottom: 15px;
+  .courses {
+    margin: 20px 0;
   }
 
-  .item-education {
-    margin-left: 5px;
-  }
-
-  .item-education a {
-    font-size: 16px;
+  .block-lectures {
+    padding: 0;
   }
 
   .footer-menu a {
