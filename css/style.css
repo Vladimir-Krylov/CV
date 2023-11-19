@@ -271,6 +271,11 @@ header {
   border: 0;
 }
 
+.contact-link .cv-link {
+  color: #7cb6eb;
+  font-weight: 400;
+}
+
 
 /* ABOUT
 ===============================================
@@ -798,7 +803,7 @@ footer p {
   }
 
   .photo-main {
-    margin: 0 15px;
+    margin: 0 15px 40px 15px;
     width: 154px;
     height: 187px;
   }
@@ -835,7 +840,7 @@ footer p {
   }
 
   .contact-info {
-    margin: 0 14px;
+    margin: 0 auto;
   }
 
   .contact-info img {
@@ -898,6 +903,11 @@ footer p {
     width: 720px;
   }
 }
+
+
+/* MEDIA-BLOCK-360
+===============================================
+*/
 
 @media screen and (min-width: 360px) and (max-width: 720px) {
   h1 {
@@ -1013,7 +1023,7 @@ footer p {
   }
 
   .contact-link {
-    margin-left: 98px;     
+    margin-left: 67px;     
   }
 
   .skills {
